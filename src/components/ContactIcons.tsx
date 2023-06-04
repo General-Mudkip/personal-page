@@ -16,20 +16,22 @@ const ContactIcon: FunctionComponent<ContactIconProps> = ({
   const [tooltipText, setTooltipText] = useState<string>(text);
   const [isCopied, setIsCopied] = useState<boolean>(false);
 
-  const copyDiscord = (text:string) => {
-    if (text == "General Mudkip#5105") {
-        const discordHandle = 'General Mudkip#5105';
-        navigator.clipboard.writeText(discordHandle);
-
-        setTooltipText('Copied!');
-        setIsCopied(true);
-
-        setTimeout(() => {
+  const copyDiscord = (text: string) => {
+    if (text === "General Mudkip#5105") {
+      const discordHandle = 'General Mudkip#5105';
+      navigator.clipboard.writeText(discordHandle)
+        .then(() => {
+          setTooltipText('Copied!');
+          setIsCopied(true);
+  
+          setTimeout(() => {
             setTooltipText(text);
             setIsCopied(false);
-        }, 2000);
-    } else {
-
+          }, 2000);
+        })
+        .catch((error) => {
+          console.log("Ran into an error.")
+        });
     }
   };
 

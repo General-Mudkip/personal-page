@@ -1,8 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import ContactIconRow from "~/components/ContactIcons";
-import Navbar from "~/components/Navbar";
 
 const Home: NextPage = () => {
   return (
@@ -26,7 +24,7 @@ const Home: NextPage = () => {
           <div className="flex flex-row justify-center align-top mt-12 gap-x-10">
             <div className="card text-white">
               <h1 className="font-bold text-3xl">About</h1>
-              <p className="text-xl mt-1">Hey, I'm a student always looking to work on improving. I'm currently learning Next.js, Tailwind, and React, alongside some others.</p>
+              <p className="text-xl mt-1">Hey, I&apos;m a student always looking to work on improving. I&apos;m currently learning Next.js, Tailwind, and React, alongside some others.</p>
             </div>
             <div className="card text-white">
               <h1 className="font-bold text-3xl">Contact</h1>
