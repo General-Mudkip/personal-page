@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           <h1 className="font-bold text-7xl text-white">General <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">Mudkip</span></h1>
           <h1 className="text-white italic font-sans">(a.k.a Bence R)</h1>
 
-          <div className="flex flex-row justify-center align-top mt-12 gap-x-10">
+          <div className="grid grid-cols-2 justify-center align-top mt-12 gap-10 w-[50rem] sm:grid-cols-1">
             <div className="card text-white">
               <h1 className="font-bold text-3xl">About</h1>
               <p className="text-xl mt-1">Hey, I&apos;m a student always looking to work on improving. I&apos;m currently learning Next.js, Tailwind, and React, alongside some others.</p>
@@ -31,6 +31,12 @@ const Home: NextPage = () => {
               <p className="text-xl mt-1">Want to reach out?</p>
 
               <ContactIconRow/>
+            </div>
+            <div className="card text-white col-span-2 sm:col-span-1 lg:col-span-2">
+              <h1 className="font-bold text-3xl">Projects</h1>
+              <p className="text-xl mt-1">Here are a few of the projects I&apos;ve worked on.</p>
+              <br/>
+              <a href="https://github.com/General-Mudkip/personal-page" className="italic decoration underline">*crickets*</a>
             </div>
           </div>
         </div>
