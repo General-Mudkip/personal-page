@@ -8,9 +8,32 @@
     .nav-link {
         @apply hover:decoration-4 transition-all font-mono;
     }
+
+    .contact-icon {
+        @apply relative flex items-center justify-center h-12 w-12 mx-auto rounded-3xl mt-8 mr-8
+        bg-gray-800 text-white
+        hover:bg-white hover:text-gray-800 hover:rounded-xl
+        transition-all duration-150 ease-linear
+        cursor-pointer
+        outline outline-offset-2 outline-2 outline-gray-900
+      }
+      
+      .contact-icon.copied .contact-tooltip {
+        @apply outline-green-500 duration-0;
+      }
+      
+      
+      .contact-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max top-14
+        rounded-md shadow-md outline
+        text-white bg-gray-900
+        text-xs font-bold
+        transition-all duration-100 scale-0 origin-top;
+      }
+      
 }
 
 .card {
-    @apply outline outline-offset-2 outline-2 outline-gray-900 bg-gray-900 opacity-80 rounded-lg
-    p-4 w-96 h-48 shadow-2xl;
+    @apply outline outline-offset-2 outline-2 outline-gray-600 bg-gray-900 opacity-80 rounded-lg
+    p-4 w-96 shadow-2xl;
 }
