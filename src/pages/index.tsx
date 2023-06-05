@@ -33,7 +33,7 @@ const Home: NextPage = () => {
               <ContactIconRow/>
             </div>
 
-            <div className="mb-12 mx-4 card sm:col-span-2">
+            <div className="mb-12 mx-4 card sm:col-span-2  lg:mx-0">
               <h1 className="font-bold text-2xl sm:text-3xl">Projects</h1>
               <p className="text-base sm:text-xl mt-2">Here are a few of the projects I&apos;ve worked on.</p>
               <br/>
