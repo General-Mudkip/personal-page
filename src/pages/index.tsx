@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             <div className="card">
               <h1 className="font-bold text-2xl sm:text-3xl">About</h1>
               <p className="text-base sm:text-xl mt-2">
-                Hey, I'm a student always looking to work on improving. I'm currently learning Next.js, Tailwind, and React, alongside some others.
+                Hey, I&apos;m a student always looking to work on improving. I&apos;m currently learning Next.js, Tailwind, and React, alongside some others.
               </p>
             </div>
 
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 
             <div className="card sm:col-span-2 md:col-span-2">
               <h1 className="font-bold text-2xl sm:text-3xl">Projects</h1>
-              <p className="text-base sm:text-xl mt-2">Here are a few of the projects I've worked on.</p>
+              <p className="text-base sm:text-xl mt-2">Here are a few of the projects I&apos;ve worked on.</p>
               <br/>
               <a href="https://github.com/General-Mudkip/personal-page" className="italic decoration underline">*crickets*</a>
             </div>
