@@ -51,7 +51,7 @@ const ContactIcon: FunctionComponent<ContactIconProps> = ({
 
 const ContactIconRow = () => {
   return (
-    <div className="grid grid-cols-4 justify-center items-center text-2xl sm:grid-cols-2 sm:mr-8 sm:text-3xl">
+    <div className="grid grid-cols-4 justify-center items-center text-2xl sm:grid-cols-2 sm:mr-8 sm:text-3xl lg:grid-cols-4 lg:-mt-2">
       <ContactIcon
         icon={<BsGithub />}
         text="General-Mudkip"
