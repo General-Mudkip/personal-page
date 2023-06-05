@@ -13,27 +13,27 @@ const Home: NextPage = () => {
 
       <main className="bg-gradient-to-b from-gray-800 to-gray-900">
         <div className="min-h-screen flex flex-col justify-center items-center px-4">
-          <h1 className="font-bold text-4xl sm:text-5xl lg:text-7xl text-white text-center mb-4">
+          <h1 className="mt-12 sm:mt-10 font-bold text-4xl sm:text-5xl lg:text-7xl text-white text-center mb-4">
             General <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">Mudkip</span>
           </h1>
           <h1 className="text-white italic font-sans text-lg sm:text-xl mb-8">(a.k.a Bence R)</h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-3xl">
-            <div className="card">
+            <div className="card mx-4 sm:ml-4 sm:mx-0 lg:ml-0">
               <h1 className="font-bold text-2xl sm:text-3xl">About</h1>
               <p className="text-base sm:text-xl mt-2">
                 Hey, I&apos;m a student always looking to work on improving. I&apos;m currently learning Next.js, Tailwind, and React, alongside some others.
               </p>
             </div>
 
-            <div className="card">
+            <div className="card mx-4 sm:mr-4 sm:mx-0 lg:mr-0">
               <h1 className="font-bold text-2xl sm:text-3xl">Contact</h1>
               <p className="text-base sm:text-xl mt-2">Want to reach out?</p>
 
               <ContactIconRow/>
             </div>
 
-            <div className="card sm:col-span-2 md:col-span-2">
+            <div className="mb-12 mx-4 card sm:col-span-2">
               <h1 className="font-bold text-2xl sm:text-3xl">Projects</h1>
               <p className="text-base sm:text-xl mt-2">Here are a few of the projects I&apos;ve worked on.</p>
               <br/>

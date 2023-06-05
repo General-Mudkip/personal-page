@@ -40,7 +40,7 @@ const ContactIcon: FunctionComponent<ContactIconProps> = ({
       className={`contact-icon group ${isCopied ? 'copied' : ''}`}
       onClick={() => copyDiscord(text)}
     >
-      <a href={url}>{icon}</a>
+      <a className="scale-100 sm:scale-150 sm:text-xl" href={url}>{icon}</a>
 
       <span className="contact-tooltip group-hover:scale-100">
         {tooltipText}
@@ -51,7 +51,7 @@ const ContactIcon: FunctionComponent<ContactIconProps> = ({
 
 const ContactIconRow = () => {
   return (
-    <div className="flex flex-row justify-center items-center text-2xl sm:text-3xl">
+    <div className="grid grid-cols-4 justify-center items-center text-2xl sm:grid-cols-2 sm:mr-8 sm:text-3xl">
       <ContactIcon
         icon={<BsGithub />}
         text="General-Mudkip"
