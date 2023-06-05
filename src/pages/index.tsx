@@ -1,4 +1,4 @@
-import { type NextPage } from "next";
+import { NextPage } from "next";
 import Head from "next/head";
 import ContactIconRow from "~/components/ContactIcons";
 
@@ -11,30 +11,31 @@ const Home: NextPage = () => {
         <link rel="icon" href="/sniff.ico" />
       </Head>
 
-
       <main className="bg-gradient-to-b from-gray-800 to-gray-900">
-          {/* <div className="top-11 relative">
-            <Navbar/>
-          </div> */}
-        <div className="min-h-screen flex flex-col align-center items-center justify-center">
-          
-          <h1 className="font-bold text-7xl text-white">General <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">Mudkip</span></h1>
-          <h1 className="text-white italic font-sans">(a.k.a Bence R)</h1>
+        <div className="min-h-screen flex flex-col justify-center items-center px-4">
+          <h1 className="font-bold text-4xl sm:text-5xl lg:text-7xl text-white text-center mb-4">
+            General <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">Mudkip</span>
+          </h1>
+          <h1 className="text-white italic font-sans text-lg sm:text-xl mb-8">(a.k.a Bence R)</h1>
 
-          <div className="grid grid-cols-2 justify-center align-top mt-12 gap-10 w-[50rem] sm:grid-cols-1">
-            <div className="card text-white">
-              <h1 className="font-bold text-3xl">About</h1>
-              <p className="text-xl mt-1">Hey, I&apos;m a student always looking to work on improving. I&apos;m currently learning Next.js, Tailwind, and React, alongside some others.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-3xl">
+            <div className="card">
+              <h1 className="font-bold text-2xl sm:text-3xl">About</h1>
+              <p className="text-base sm:text-xl mt-2">
+                Hey, I'm a student always looking to work on improving. I'm currently learning Next.js, Tailwind, and React, alongside some others.
+              </p>
             </div>
-            <div className="card text-white">
-              <h1 className="font-bold text-3xl">Contact</h1>
-              <p className="text-xl mt-1">Want to reach out?</p>
+
+            <div className="card">
+              <h1 className="font-bold text-2xl sm:text-3xl">Contact</h1>
+              <p className="text-base sm:text-xl mt-2">Want to reach out?</p>
 
               <ContactIconRow/>
             </div>
-            <div className="card text-white col-span-2 sm:col-span-1 lg:col-span-2">
-              <h1 className="font-bold text-3xl">Projects</h1>
-              <p className="text-xl mt-1">Here are a few of the projects I&apos;ve worked on.</p>
+
+            <div className="card sm:col-span-2 md:col-span-2">
+              <h1 className="font-bold text-2xl sm:text-3xl">Projects</h1>
+              <p className="text-base sm:text-xl mt-2">Here are a few of the projects I've worked on.</p>
               <br/>
               <a href="https://github.com/General-Mudkip/personal-page" className="italic decoration underline">*crickets*</a>
             </div>

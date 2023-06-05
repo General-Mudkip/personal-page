@@ -23,7 +23,7 @@ const ContactIcon: FunctionComponent<ContactIconProps> = ({
         .then(() => {
           setTooltipText('Copied!');
           setIsCopied(true);
-  
+
           setTimeout(() => {
             setTooltipText(text);
             setIsCopied(false);
@@ -51,7 +51,7 @@ const ContactIcon: FunctionComponent<ContactIconProps> = ({
 
 const ContactIconRow = () => {
   return (
-    <div className="flex flex-row justify-center items-center text-3xl">
+    <div className="flex flex-row justify-center items-center text-2xl sm:text-3xl">
       <ContactIcon
         icon={<BsGithub />}
         text="General-Mudkip"
